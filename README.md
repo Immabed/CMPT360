@@ -15,3 +15,5 @@ The projects included in this directory showcase programs written in eight progr
 For the purposes of the course, I was required to choose each project from a selection of problems, and implement it in (usually) any language I chose. Over the entire course I was required to develop on three different platforms (I used Windows, Mac OSX, and Linux), and to usea certain number of languages from each of four different categories given by the professor. These requirements are mentioned at the beginning of each project's documentation.
 
 The documentation was also a part of the project requirements.
+
+In preparation for putting the projects on github I have made small changes to the documentation and programs, to remove my student identification number, and to make it more clear what each project actually does. 
