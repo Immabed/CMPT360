@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C3B6EED0-E2D1-485B-A696-98D43AD8345B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Lab5.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\Brady\Documents\Embarcadero\Studio\Projects\User.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Lab5">
+        <MSBuild Projects="Lab5.dproj"/>
+    </Target>
+    <Target Name="Lab5:Clean">
+        <MSBuild Projects="Lab5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Lab5:Make">
+        <MSBuild Projects="Lab5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="User">
+        <MSBuild Projects="C:\Users\Brady\Documents\Embarcadero\Studio\Projects\User.dproj"/>
+    </Target>
+    <Target Name="User:Clean">
+        <MSBuild Projects="C:\Users\Brady\Documents\Embarcadero\Studio\Projects\User.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="User:Make">
+        <MSBuild Projects="C:\Users\Brady\Documents\Embarcadero\Studio\Projects\User.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Lab5;User"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Lab5:Clean;User:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Lab5:Make;User:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
