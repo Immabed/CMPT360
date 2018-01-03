@@ -1,5 +1,5 @@
 # CMPT360
-This repository is a collection of homework/lab assignments from the course CMPT 360 - Comparative Programming Languages. Each directory in the main directory is one of the projects, and includes project documentation and source code in one or two programming languages.
+This repository is a collection of homework/lab assignments from the course CMPT 360 - Comparative Programming Languages, which I took in Spring 2017. Each directory in the main directory is one of the projects, and includes project documentation and source code in one or two programming languages.
 
 The goal of the course was to gain an understanding of the basic programming constructs, what sorts of implementations are used in different languages, and what differences exist between different programming languages and language families.
 
